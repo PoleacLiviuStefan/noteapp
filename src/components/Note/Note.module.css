@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  margin-top: 2rem;
+  min-height: 5rem;
+  width: 100%;
+  animation: pop-up 0.3s linear;
+  animation-fill-mode: forwards;
+  padding: 0.5rem;
+}
+
+.title {
+  display: flex;
+  word-break: break-all;
+  font-size: 1.2rem;
+  flex: 12;
+}
+
+.title img {
+}
+
+.edit {
+  flex: 1;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.edit img {
+  width: 40px;
+}
+
+.editMode {
+  background-color: #646fd4;
+  border: none;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.editMode:focus {
+  outline: none;
+}
+
+.time {
+  flex: 2;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.controls {
+  flex: 1.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes pop-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

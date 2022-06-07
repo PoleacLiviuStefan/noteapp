@@ -1,0 +1,66 @@
+.container {
+  position: fixed;
+  z-index: 5;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  width: 25rem;
+  height: 6rem;
+  background-color: #b6e1e0;
+  animation: appear 0.7s;
+  animation-fill-mode: forwards;
+  border: 1px solid rgba(0, 0, 0, 0.321);
+  border-radius: 0.8rem 0.8rem 0.8rem 0;
+  -webkit-box-shadow: -4px 12px 15px -3px rgba(0, 0, 0, 0.31);
+  box-shadow: -4px 12px 15px -3px rgba(0, 0, 0, 0.31);
+}
+
+@keyframes appear {
+  from {
+    top: -20%;
+  }
+  to {
+    top: 1%;
+  }
+}
+.controls button {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  margin-right: 20px;
+  border: none;
+  background-color: #fafbd4;
+  border-radius: 0.2rem;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controls button:nth-child(1) {
+  background-color: rgb(26, 176, 101);
+  color: #fff;
+}
+
+.controls button:nth-child(2) {
+  background-color: rgb(245, 74, 39);
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+.container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  /* position: absolute; */
+  top: 0;
+  margin-left: 1.5rem;
+}
+
+.container p:nth-child(2) {
+  font-size: 1rem;
+}

@@ -1,0 +1,28 @@
+.buttonadd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(65, 147, 255);
+  border: none;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 4.5rem;
+  -webkit-box-shadow: -4px 12px 15px -3px rgba(0, 0, 0, 0.31);
+  box-shadow: -4px 12px 15px -3px rgba(0, 0, 0, 0.31);
+}
+.buttonadd:active {
+  background-color: rgb(114, 174, 252);
+  color: #fff;
+  animation: less 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes less {
+  from {
+    font-size: 1.5rem;
+  }
+  to {
+    font-size: 1.3rem;
+  }
+}

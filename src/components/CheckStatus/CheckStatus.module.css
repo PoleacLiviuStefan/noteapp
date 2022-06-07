@@ -1,0 +1,29 @@
+.container button {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.4rem;
+  cursor: pointer;
+  background-color: rgb(6, 253, 55);
+  border: none;
+  border-radius: 0.3rem;
+}
+.container button:active {
+  animation: pop-up 0.1s;
+}
+
+@keyframes pop-up {
+  0% {
+    font-size: 2.5rem;
+  }
+  50% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
